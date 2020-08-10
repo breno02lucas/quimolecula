@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    width: 100%; height: 100%;    
+    background-color: #f7fffe;
+}
+
+#cabMenu{
+    position: relative;
+    float: left;
+    width: 100%; height: 100px;
+    background: linear-gradient(to right, #9933ff 29%, #cc00ff 100%);
+}
+
+.Title{
+    position: absolute;
+    width: 150px; height: 200px;
+    left: 10%;
+    background: url('../img/logo-top.png') no-repeat top;
+    background-size: 150px 170px;
+}
+
+#menu{
+    position: relative;
+    float: right;
+    width: 60%; height: 100px;
+}
+
+.menuLink{
+    display: inline-block;
+    margin-right: 2%;
+    line-height: 100px;
+}
+
+.menuLink a{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    transition-duration: .3s;
+}
+
+.menuLink a:hover{
+    color: purple;
+}
+
+@media (max-width: 1200px)
+{
+    #menu{
+        width: 70%;
+    }
+}
+
+@media (max-width: 1070px)
+{
+    #menu{
+        width: 65%;
+    }
+
+    .menuLink{
+        margin-right: 1%;
+    }
+    
+    .menuLink a{
+        padding: 8px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 980px)
+{
+    #menu{
+        width: 70%;
+    }
+
+    .menuLink{
+        margin-right: 1%;
+    }
+    
+    .menuLink a{
+        padding: 8px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 900px)
+{
+    #menu{
+        width: 71%;
+    }
+
+    .menuLink{
+        margin-right: 0.6%;
+    }
+    
+    .menuLink a{
+        padding: 8px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 875px)
+{
+    #menu{
+        display: none;
+    }
+}

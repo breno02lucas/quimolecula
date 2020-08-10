@@ -1,0 +1,87 @@
+
+#menuRespon{
+    position: relative;
+    display: none;
+    float: right;
+    width: 100px; height: 100px;     
+    background-color: white;
+}
+
+.menuIcon{
+    position: relative;
+    width: 60px; height: 45px;
+    top: 30%; left: 18%;
+    overflow: hidden;    
+    transition-duration: .5s;
+}
+
+.menuIcon div{
+    position: absolute;
+    width: 100px; height: 15px;
+    background: url('../img/barMenu.png') no-repeat;
+    background-size: 60px;    
+    transform-origin: center;    
+}
+
+.bar1{
+    transition-duration: .8s;
+}
+
+.bar2{
+    transition-duration: .8s;
+    top: 30%; left: 0;
+}
+
+.bar3{
+    transition-duration: .5s;
+    top: 60%;
+}
+
+.menuIcon:hover .bar1{
+    bottom: 0;
+    transform: rotateZ(45deg);
+}
+
+.menuIcon:hover .bar2{
+    left: 100%;
+}
+
+.menuIcon:hover .bar3{
+    top: 0;
+    transform: rotateZ(-45deg);    
+}
+
+#main-menuRespon{
+    display: none;
+    position: fixed;
+    width: 100%;
+    padding-top: 5%;
+    z-index: 5;
+    background: linear-gradient(to bottom, #9933ff 0%, #cc00ff 100%);
+    text-align: center;
+}
+
+.sec-menuLink{
+    margin-bottom: 5%;
+}
+
+.sec-menuLink a{    
+    font-size: 35px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 875px){   
+    #menuRespon{
+        display: block;
+    }
+}
